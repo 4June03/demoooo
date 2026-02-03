@@ -21,7 +21,7 @@ export default function FormDemo() {
   }
 
   return (
-    <div style={{ maxWidth: 400, margin: "40px auto" }}>
+    <div style={{ maxWidth: 400, margin: "40px auto" }} className="bg-white text-black p-4">
       <h2>Demo Contact Form</h2>
 
       <form onSubmit={handleSubmit}>
@@ -33,6 +33,7 @@ export default function FormDemo() {
             required
             onChange={(e) => setName(e.target.value)}
             style={{ width: "100%" }}
+             className="border-2"
           />
         </div>
 
@@ -44,10 +45,11 @@ export default function FormDemo() {
             required
             onChange={(e) => setEmail(e.target.value)}
             style={{ width: "100%" }}
+            className="border-2"
           />
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" className="p-1 border-2 w-full rounded-3xl">Submit</button>
       </form>
     </div>
   )
