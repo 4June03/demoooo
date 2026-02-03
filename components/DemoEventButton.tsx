@@ -6,7 +6,7 @@ export const EventButton =()=> {
   return (
     <div>
       <button
-        onClick={() => sendGTMEvent({ event: 'buttonClicked', value: 'xyz' })}
+        onClick={() => sendGTMEvent({ event: 'demo_integration_event', value: 'xyz' })}
         className='p-4 border-2 border-white'
       >
         Send Event
