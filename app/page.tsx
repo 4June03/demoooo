@@ -1,5 +1,6 @@
 import { EventButton } from "@/components/DemoEventButton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -60,6 +61,7 @@ export default function Home() {
             Documentation
           </a>
           <EventButton />
+          <Link href={"/form"}>Go to form</Link>
         </div>
       </main>
     </div>
